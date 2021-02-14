@@ -1,8 +1,8 @@
-import { logMessage7 } from '../function/basic';
+import { logMessage7 } from '../function/basic'
 export default function objectSample() {
-  const a: object = {
+  const a = {
     name: 'Torahack',
-    age: 28
+    age: 28,
   }
   // a.name
 
@@ -11,18 +11,18 @@ export default function objectSample() {
     language: string
     name: string
   } = {
-    language: "Japanese",
-    name: "Japan"
+    language: 'Japanese',
+    name: 'Japan',
   }
 
-  console.log("Object object sample 1:", country)
+  console.log('Object object sample 1:', country)
 
   country = {
-    language: "English",
-    name: "United States of America"
+    language: 'English',
+    name: 'United States of America',
   }
 
-  console.log("Object object sample 2:", country)
+  console.log('Object object sample 2:', country)
 
   // オプショナルとreadonly
   const torahack: {
@@ -32,26 +32,26 @@ export default function objectSample() {
     gender?: string
   } = {
     age: 28,
-    lastName: "Yamada",
-    firstName: "Tarou",
+    lastName: 'Yamada',
+    firstName: 'Tarou',
   }
 
   torahack.gender = 'male'
   torahack.lastName = 'Kamado'
   // torahack.firstName = 'Tanjiro'
 
-  console.log("Object object sample 3:", torahack)
+  console.log('Object object sample 3:', torahack)
 
   // インデックスシグネチャ
-  const capitals : {
+  const capitals: {
     [countryName: string]: string
   } = {
     Japan: 'Tokyo',
-    Korea: 'Seoul'
+    Korea: 'Seoul',
   }
 
   capitals.China = 'Beijing'
   capitals.Canada = 'Ottawa'
 
-  console.log("Object object sample 4:", capitals)
+  console.log('Object object sample 4:', capitals)
 }
