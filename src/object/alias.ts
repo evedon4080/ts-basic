@@ -9,18 +9,18 @@ export default function typeAliasSample() {
   const japan: Country = {
     capital: 'Tokyo',
     language: 'Japanese',
-    name: 'Japan'
+    name: 'Japan',
   }
 
-  console.log("Object alias sample 1:", japan)
+  console.log('Object alias sample 1:', japan)
 
   const america: Country = {
     capital: 'Washington, D.C.',
     language: 'English',
-    name: 'United States of America'
+    name: 'United States of America',
   }
 
-  console.log("Object alias sample 2:", america)
+  console.log('Object alias sample 2:', america)
 
   // 合併型（union）と交差型（intersection）
   type Knight = {
@@ -48,7 +48,7 @@ export default function typeAliasSample() {
     hp: 100,
     sp: 30,
     weapon: '木の剣',
-    swordSkill: '三連斬り'
+    swordSkill: '三連斬り',
   }
 
   // Wizard寄りの冒険者
@@ -56,11 +56,11 @@ export default function typeAliasSample() {
     hp: 100,
     mp: 30,
     weapon: '木の杖',
-    magicSkill: 'ファイヤボール'
+    magicSkill: 'ファイヤボール',
   }
 
-  console.log("Object alias sample 3:", adventure1)
-  console.log("Object alias sample 4:", adventure2)
+  console.log('Object alias sample 3:', adventure1)
+  console.log('Object alias sample 4:', adventure2)
 
   const paladin: Paladin = {
     hp: 300,
@@ -68,8 +68,8 @@ export default function typeAliasSample() {
     mp: 100,
     weapon: '銀の剣',
     swordSkill: '三連斬り',
-    magicSkill: 'ファイヤボール'
+    magicSkill: 'ファイヤボール',
   }
 
-  console.log("Object alias sample 5:", paladin)
+  console.log('Object alias sample 5:', paladin)
 }
